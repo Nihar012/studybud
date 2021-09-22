@@ -1,0 +1,53 @@
+.DataEditor {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.DataEditor .Toolbar {
+  height: 5%;
+  margin: 0 0 4px 0;
+  padding: 5px 0;
+  background-color: rgb(41, 41, 41);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.DataEditor .Heading {
+  margin: auto;
+  height: 100%;
+  color: white;
+  box-sizing: border-box;
+}
+
+.DataEditor .CloseButton {
+  background-color: tomato;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.DataEditor textarea {
+  width: 98%;
+  height: 85%;
+  margin: 0 auto;
+  overflow: auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.DataEditor .Buttons {
+  height: 8%;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Buttons Button {
+  margin: 0 15px;
+}

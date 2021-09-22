@@ -1,0 +1,183 @@
+.Modal {
+  position: fixed;
+  /* background-color: transparent; */
+  /* border: hidden; */
+  /* width: 90%; */
+  /* max-width: 90%; */
+  /* max-height: 75%; */
+  /* padding: 0; */
+  /* top: 10%; */
+  /* left: 5%; */
+  box-sizing: border-box;
+  text-align: center;
+  overflow: auto;
+  z-index: 200;
+}
+
+.AuthModal {
+  top: 15%;
+  width: 80%;
+  max-width: 500px;
+  left: unset;
+  right: 10%;
+}
+
+.OpenAuthModal {
+  animation: openAuthModal 0.2s ease-out forwards;
+}
+
+.CloseAuthModal {
+  animation: closeAuthModal 0.2s ease-out forwards;
+}
+
+@keyframes openAuthModal {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    right: 5%;
+    top: 3%;
+  }
+  50% {
+    opacity: 0.3;
+    width: 20%;
+    height: 50px;
+    right: 7%;
+    top: 8%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes closeAuthModal {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+    width: 20%;
+    height: 50px;
+    right: 7%;
+    top: 8%;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    right: 5%;
+    top: 3%;
+  }
+}
+
+
+.EditModal {
+  width: 90%;
+  height: 70%;
+  bottom: 15%;
+  right: 5%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.EditModal .ModalHeading {  
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.OpenEditModal {
+  animation: openEditModal 0.2s ease-out forwards;
+}
+
+.CloseEditModal {
+  animation: closeEditModal 0.2s ease-out forwards;
+}
+
+@keyframes openEditModal {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    right: 10%;
+  }
+  50% {
+    opacity: 0.3;
+    width: 50px;
+    height: 10%;
+    right: 10%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes closeEditModal {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+    width: 50px;
+    height: 10%;
+    right: 10%;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    right: 10%;
+  }
+}
+
+.DataEditorModal {
+  width: 96%;
+  max-width: 96%;
+  height: 85%;
+  max-height: 90%;
+  background-color: white;
+  left: unset;
+  top: unset;
+  left: 2%;
+  top: 8%;
+}
+
+.OpenDataEditorModal {
+  animation: openDataEditor 0.2s ease-out forwards;
+}
+
+.CloseDataEditorModal {
+  animation: closeDataEditor 0.2s ease-out forwards;
+}
+
+@keyframes openDataEditor {
+  0% {
+    opacity: 0;
+    height: 0px;
+  }
+  50% {
+    opacity: 0.5;
+    height: 50%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes closeDataEditor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    height: 50%;
+  }
+  100% {
+    opacity: 0;
+    height: 0%;
+  }
+}
+
+

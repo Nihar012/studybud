@@ -1,0 +1,53 @@
+.Select {
+    width: 100%;
+    padding: 10px 10px;
+    background-color: white;    
+    color: rgb(0, 141, 0);    
+    box-shadow: 0 2px 4px rgb(168, 168, 168);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Select .Triangle {
+    float: right;    
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #555;
+}
+
+.Select.OptionsOpen .Triangle {
+    border-top: unset;
+    border-bottom: 10px solid #555;
+}
+
+.Options {
+    width: 98%;
+    margin: auto;
+    margin-top: 3px;
+    padding: 0;    
+    box-shadow: 0 2px 8px rgb(202, 202, 202);
+    box-sizing: border-box;
+}
+
+.Option {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: 1px solid rgb(202, 202, 202);
+    color: #ff004c;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.Option:hover,
+.Option:active,
+.Option.Selected {
+    background-color: rgb(230, 230, 230);
+}

@@ -1,0 +1,134 @@
+.Card {
+  margin: 13px auto;
+  padding: 0 20px;
+  padding-left: 10px;
+  width: 88%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgb(254, 254, 254);
+  /* border: 1px solid rgb(219, 219, 219); */
+  box-shadow: 0 2px 3px rgb(209, 209, 209);
+  outline: none;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  border: hidden;
+}
+
+.Card .Details {
+  height: 100%;
+  padding-top: 15px;
+  padding-left: 3px;
+  text-align: left;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Details h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+}
+
+.Details p {
+  width: max-content;
+  padding: 2px;
+  margin: 0;
+  font-size: 13px;
+  color: rgb(255, 38, 0);
+  box-sizing: border-box;
+}
+
+.Card .SelectedOption {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70%;
+  min-width: 70px;
+  width: 70px;
+  margin: 0;
+  padding-left: 8px;  
+  border-left: 2px solid rgb(161, 161, 161);
+}
+
+.SelectedOption h5{
+    color:rgb(161, 161, 161);
+    font-size: 14px;
+}
+
+.SelectedOption h2 {
+  margin: 0;
+  padding: 0;
+  padding-left: 7px;
+  color: rgb(0, 120, 0);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.SelectedOption p{
+  margin: 0;
+  padding: 0;
+  padding-left: 7px;
+  color: rgb(0, 120, 0);
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.Card.disable {
+  display: none;
+}
+
+.Card.Selected{
+  border: 1px solid rgb(49, 184, 49);
+}
+
+.Card.Selected .SelectedOption h5{
+  font-size: 17px;
+  font-weight: bold;
+  padding: 8px;
+  background-color: rgb(0, 148, 0);
+  color: white;
+  border-radius: 3px;
+}
+
+.Card.Selected .SelectedOption{
+  border-left: hidden;
+}
+
+.Card::after {
+  display: none;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  top: 50%;
+  left: 50%;
+  animation: ripple 0.6s;
+  opacity: 0;
+}
+
+.Card:focus:not(:active)::after {
+  display: block;
+}
+
+@keyframes ripple {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(10);
+  }
+}

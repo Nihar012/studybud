@@ -1,0 +1,29 @@
+.Auth {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+.Auth .Heading {
+  color: #202020;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.Auth .SubmitButton {
+  padding: 10px;
+}
+
+.SwitchMessage {
+  color: rgb(41, 41, 41);
+  font-size: 15px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  width: 70%;
+}

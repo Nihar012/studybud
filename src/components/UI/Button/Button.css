@@ -1,0 +1,83 @@
+.Button {
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  border: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.SelectPattern {
+  color: #00b7ff;
+  border-radius: 20px;
+  border: 1px solid  #00b7ff;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+.SelectPattern:hover,
+.SelectPattern:active,
+.SelectPattern.active {
+  background-color:  #00b7ff;
+  color: white;
+}
+
+.SubmitForm {
+  background-color: #0077ff;
+  border-radius: 2px;
+  color: white;
+  box-shadow: 0 1px 1px rgb(161, 161, 161);
+}
+
+.View {
+  color: rgb(0, 89, 172);
+  margin: 0 1px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.Download {
+  color: rgb(0, 167, 0);
+  margin: 0 1px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.View:hover,
+.View:active{
+  color: white;
+  background-color:rgb(0, 89, 172);
+}
+
+.Download:hover,
+.Download:active{
+  color: white;
+  background-color:rgb(0, 150, 0);
+}
+
+.Danger {
+  color: rgb(192, 0, 0);
+  border-radius: 10px;
+}
+
+.Success {
+  background-color: rgb(0, 182, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: 0 1px 2px #ccc;
+}
+
+.Success:hover,
+.Success:active{
+  background-color: rgb(0, 226, 0);
+}
+
+.SuccessRegular {
+  color: rgb(0, 155, 0);
+}

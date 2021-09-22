@@ -1,0 +1,103 @@
+.AdminSideDrawer {
+    position: fixed;
+    width: 100%;
+    top: 58px;
+    left: 0;
+    box-sizing: border-box;    
+    z-index: 50;
+}
+
+.PathHolder {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(250, 249, 249);
+    font-size: small;    
+}
+
+.Home {
+    padding: 0 8px;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 100px;
+    text-decoration: none;
+    box-shadow: 0 1px 2px rgb(155, 155, 155);
+    z-index: 51;
+}
+
+.Home:hover,
+.Home:active{
+    background-color: rgb(233, 233, 233);
+}
+
+.Home .Icon {
+    fill: rgb(14, 14, 14);
+}
+
+.Home a:hover .Icon,
+.Home a:active .Icon,
+.Home a.active .Icon{
+    fill: rgb(255, 0, 60);    
+}
+
+.Path {
+    display: flex;
+    align-items: center;
+    padding-left: 7px;    
+}
+
+.Path a {
+    text-decoration: none;
+    padding-right: 5px;
+    color: rgb(119, 119, 119);
+}
+
+.Path a:hover,
+.Path a:active,
+.Path a.active {
+    color: rgb(255, 79, 60);
+}
+
+.AdminSideDrawer nav {
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(231, 231, 231);
+}
+
+.ShowAdminNav {
+    animation: showNav 0.2s linear forwards;
+}
+
+.CloseAdminNav {
+    animation: closeNav 0.2s linear forwards;
+}
+
+@keyframes showNav {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes closeNav {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+}

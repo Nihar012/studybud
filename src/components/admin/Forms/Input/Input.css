@@ -1,0 +1,142 @@
+.Input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.InputElement {
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    outline: none;
+    border: hidden;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    font-size: 13px;
+    background-color: rgb(252, 252, 252);
+}
+
+.InputElement::placeholder{
+    color: rgb(170, 170, 170);
+}
+
+.InputElement:focus {
+    border-bottom: 2px solid #cecece;
+}
+
+.InputElement.Invalid {
+    border-bottom: 2px solid rgb(206, 19, 19);
+}
+
+.InputElement.Valid {
+    border-bottom: 2px solid #10bb00;
+}
+
+.SelectPattern {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.DataCreator {
+    margin: auto;
+    padding: 0;
+}
+
+.DataCreator .Buttons {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DataCreator .Buttons label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    margin: 0 10px;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(0, 106, 226);
+}
+
+.DataCreator label p {
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.DataCreator .Buttons button {
+    margin: 0 10px;
+    padding: 7px;
+    color: white;
+    font-size: 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(0, 106, 226);
+    border: hidden;
+}
+
+.DataCreator .Status {
+    box-sizing: border-box;
+    margin-left: 5px;    
+}
+
+.Status .Message {
+    margin: 0;
+    font-size: 15px;
+    color: rgb(139, 139, 139);
+}
+
+.Status .Spinner {
+    margin: 45px 0 40px 0;
+    box-sizing: border-box;
+}
+
+.Status .Success,
+.Status .Danger {
+    margin: 0;
+}
+
+.UploadArea {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    width: 170px;
+    height: 210px;
+    background-color: white;
+    position: relative;
+}
+
+.UploadArea label {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed black;
+  }
+
+.UploadArea img {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.UploadArea .CloseButton {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    cursor: pointer;
+}
